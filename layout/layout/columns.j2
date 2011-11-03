@@ -1,0 +1,35 @@
+{# Columns template #}
+
+{% extends "topbar.j2" %}
+
+{% block css %}
+<link href="{{ media_url('css/columns.css') }}" rel="stylesheet">
+{% endblock css %}
+
+
+{% block content %}
+
+<div class="page-header">
+  {% block header %}
+  <h1>
+    {% block page_title %}{{ resource.meta.title }}{% endblock %}
+    {% if resource.meta.subtitle %}<small>{% block page_subtitle %}{{ resource.meta.subtitle }}{% endblock %}</small>{% endif %}
+  </h1>
+  {% endblock header %}
+</div>
+
+<div class="row">
+  <div class="span10">
+      {% filter markdown -%}
+      {% block main %}{% endblock %}
+      {%- endfilter %}
+  </div>
+  <div class="span4">
+    {% block sidebar %}{% endblock %}
+  </div>
+</div>
+
+{% endblock content %}
+
+
+
