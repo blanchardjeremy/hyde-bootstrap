@@ -10,11 +10,12 @@ I'm working on getting a demo site up. For now, you can look at the [specific Bo
 ## Setup
 The simplest way to use this layout is to:
 
-  1. Download and unzip the latest [zip archive](https://github.com/auzigog/hyde-bootstrap/zipball/master)
-  2. Run these commands on the terminal:
+  1. Run these commands on the terminal:
 
   ```bash
-  cp /path/to/unzipped/directory/hyde-bootstrap/layout ~/Projects/mynewsite
+  mkdir ~/Projects/mynewsite
+  cd ~/Projects/mynewsite
+  git clone http://github.com/auzigog/hyde-bootstrap.git .
   hyde gen   # To generate the site in it's default state
   ```
   3. Poke around on the site by opening ~/Projects/mynewsite/deploy/index.html in your browser
