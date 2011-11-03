@@ -10,12 +10,13 @@ I'm working on getting a demo site up. For now, you can look at the [specific Bo
 ## Setup
 The simplest way to use this layout is to:
 
-```bash
-# Download and unzip the latest [zip archive](https://github.com/auzigog/hyde-bootstrap/zipball/master)
-cp /path/to/unzipped/directory/hyde-bootstrap/layout ~/Projects/mynewsite
-hyde gen   # To generate the site in it's default state
-# Poke around on the site by opening ~/Projects/mynewsite/deploy/index.html in your browser
-```
+  1. Download and unzip the latest [zip archive](https://github.com/auzigog/hyde-bootstrap/zipball/master)
+  2. Run these commands on the terminal:
+  ```bash
+  cp /path/to/unzipped/directory/hyde-bootstrap/layout ~/Projects/mynewsite
+  hyde gen   # To generate the site in it's default state
+  ```
+  3. Poke around on the site by opening ~/Projects/mynewsite/deploy/index.html in your browser
 
 
 ## Usage
@@ -33,6 +34,12 @@ To make real use of this package, you will need to create your own templates.
 
 You can subclass `topbar.j2` or `base.j2` to cover most use cases. All of the templates that are provided serve as a
 starting point and as an examlpe of possible approaches you can use.
+
+
+### Adding content
+Look at all of the `.html` files in the `content` directory for an examlpe of how to begin adding your own content.
+
+You can also go to a new directory and run `hyde create mysamplehydesite` to check out their default layout and content.
 
 
 ### Adding CSS
