@@ -12,6 +12,7 @@ The simplest way to use this layout is to:
 
   1. Download and unzip the latest [zip archive](https://github.com/auzigog/hyde-bootstrap/zipball/master)
   2. Run these commands on the terminal:
+
   ```bash
   cp /path/to/unzipped/directory/hyde-bootstrap/layout ~/Projects/mynewsite
   hyde gen   # To generate the site in it's default state
