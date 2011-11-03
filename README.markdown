@@ -37,7 +37,7 @@ You can subclass `topbar.j2` or `base.j2` to cover most use cases. All of the te
 starting point and as an examlpe of possible approaches you can use.
 
 
-### Adding content
+### Adding Content
 Look at all of the `.html` files in the `content` directory for an examlpe of how to begin adding your own content.
 
 You can also go to a new directory and run `hyde create mysamplehydesite` to check out their default layout and content.
