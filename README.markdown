@@ -10,15 +10,21 @@ I'm working on getting a demo site up. For now, you can look at the [specific Bo
 ## Setup
 The simplest way to use this layout is to:
 
+### Using a Zip File
+  1. Download the [latest zip archive](https://github.com/auzigog/hyde-bootstrap/zipball/master)
+  2. Unzip it
+  3. Place the unzipped files wherever you want your new Hyde site to be
+  4. From the terminal run `hyde gen` to generate the Bootstrap-based site in it's default state
+  5. Poke around on the site by opening mynewsite/deploy/index.html in your browser
+ 
+### Using Git
   1. Run these commands on the terminal:
 
   ```bash
-  mkdir ~/Projects/mynewsite
-  cd ~/Projects/mynewsite
-  git clone http://github.com/auzigog/hyde-bootstrap.git .
-  hyde gen   # To generate the site in it's default state
+  git clone http://github.com/auzigog/hyde-bootstrap.git mynewsite
+  hyde gen   # To generate the Bootstrap-based site in it's default state
   ```
-  3. Poke around on the site by opening ~/Projects/mynewsite/deploy/index.html in your browser
+  3. Poke around on the site by opening mynewsite/deploy/index.html in your browser
 
 
 ## Usage
