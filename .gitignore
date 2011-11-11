@@ -1,3 +1,4 @@
 layout/deploy
+deploy
 *.hyde_deps
 *.DS_Store
