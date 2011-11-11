@@ -47,18 +47,20 @@ starting point and as an examlpe of possible approaches you can use.
 ### Adding Content
 Look at all of the `.html` files in the `content` directory for an examlpe of how to begin adding your own content.
 
-You can also go to a new directory and run `hyde create mysamplehydesite` to check out their default layout and content.
+You can also go to a separate, fresh directory and run `hyde create mysamplehydesite` to check out their default layout
+and content.
 
 
 ### Adding CSS
-To extend the CSS of a given page, use the `{% block css %}{% endblock %}` block.
+To extend the CSS of a given page, use the `{% block css %}{% endblock %}` block. You can do this with a <style> block
+or a <link> to a CSS file.
 
 
 ## Versions
 Built using:
 
-  * Hyde [0.8.3](http://github.com/hyde/hyde/tree/7ce58157a9e74cc767cd602097441b8424a2052f)  ([homepage][hyde])
-  * Bootstrap [1.3.0](http://github.com/twitter/bootstrap/tree/f03f7da08beede6e6a92ecc6bf28ca978750cd7a) ([homepage][bootstrap])
+  * Hyde [0.8.4](http://github.com/hyde/hyde/tree/42d30a6ff979c444fbec5bf04e56863d7d63fef9) -- [homepage][hyde], [repo](http://github.com/hyde/hyde)
+  * Bootstrap [1.4.0](http://github.com/twitter/bootstrap/tree/f92759b36db43e782e4235f1f214ac5851383f9b) -- [homepage][bootstrap], [repo](http://github.com/twitter/bootstrap/)
 
 
 ## Notes
