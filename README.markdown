@@ -2,6 +2,7 @@
 
 A layout for [Hyde][hyde] using the [Bootstrap][bootstrap] framework.
 
+Current stable version (v0.2)
 
 ## Demo
 I'm working on getting a demo site up. For now, you can look at the [specific Bootstrap example layout][bootstrap_template] this was based on.
