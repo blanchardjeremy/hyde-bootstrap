@@ -2,9 +2,10 @@
 
 {% extends "topbar.j2" %}
 
-{% block css %}
+{% block basecss %}
+{{ super() }}
 <link href="{{ media_url('css/columns.css') }}" rel="stylesheet">
-{% endblock css %}
+{% endblock basecss %}
 
 
 {% block content %}
