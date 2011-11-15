@@ -53,8 +53,8 @@ and content.
 
 
 ### Adding CSS
-To extend the CSS of a given page, use the `{% block css %}{% endblock %}` block. You can do this with a <style> block
-or a <link> to a CSS file.
+To extend the CSS of a given page, use the `{% block css %}{% endblock %}` block. You can do this with a `<style>` block
+or a `<link>` to a CSS file.
 
 
 ## Versions
