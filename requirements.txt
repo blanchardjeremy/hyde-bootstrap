@@ -1,0 +1,4 @@
+distribute==0.6.15
+-e git://github.com/hyde/hyde.git#egg=hyde
+wsgiref==0.1.2
+fs==0.4.0
