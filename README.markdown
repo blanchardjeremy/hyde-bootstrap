@@ -22,7 +22,9 @@ The simplest way to use this layout is to:
   1. Run these commands on the terminal:
 
   ```bash
-  git clone http://github.com/auzigog/hyde-bootstrap.git mynewsite
+  git clone http://github.com/auzigog/hyde-bootstrap.git mynewsite/code
+  virtualenv --no-site-packages --distribute mynewsite/env
+  pip install -r requirements.txt
   hyde gen   # To generate the Bootstrap-based site in it's default state
   ```
   3. Poke around on the site by opening mynewsite/deploy/index.html in your browser
