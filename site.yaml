@@ -1,6 +1,6 @@
 mode: development # Change to "production" before generating a production deployment
 media_root: media # Relative path from content folder.
-media_url: media # URL where the media files are served from.
+media_url: /media # URL where the media files are served from.
 plugins:
     - hyde.ext.plugins.meta.MetaPlugin
     - hyde.ext.plugins.auto_extend.AutoExtendPlugin
