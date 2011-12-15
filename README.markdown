@@ -46,18 +46,26 @@ To make real use of this package, you will need to create your own templates.
 You can subclass `topbar.j2` or `base.j2` to cover most use cases. All of the templates that are provided serve as a
 starting point and as an examlpe of possible approaches you can use.
 
-
 ### Adding Content
 Look at all of the `.html` files in the `content` directory for an examlpe of how to begin adding your own content.
 
 You can also go to a separate, fresh directory and run `hyde create mysamplehydesite` to check out their default layout
 and content.
 
-
 ### Adding CSS
 To extend the CSS of a given page, use the `{% block css %}{% endblock %}` block. You can do this with a `<style>` block
 or a `<link>` to a CSS file.
 
+### Publishing
+To publish the site, first edit site.yaml to match your preferred publishing (github, sftp, etc). See the
+[Hyde README](https://github.com/hyde/hyde/blob/master/README.rst) for details. Then run:
+
+```bash
+hyde publish -c prod.yaml
+```
+
+Use prod.yaml makes it easy to switch your `site.config.mode` variable to `"production"` which can enable production-only
+elements of your site. In the default hyde-bootstrap setup, analytics is only rendered in production mode.
 
 ## Versions
 Built using:

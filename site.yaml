@@ -1,4 +1,4 @@
-mode: development # Change to "production" before generating a production deployment
+mode: development # Use "hyde publish -c prod.yaml to have this automatically switch to production
 media_root: media # Relative path from content folder.
 media_url: /media # URL where the media files are served from.
 plugins:
