@@ -19,15 +19,30 @@ The simplest way to use this layout is to:
   5. Poke around on the site by opening mynewsite/deploy/index.html in your browser
  
 ### Using Git
-  1. Run these commands on the terminal:
 
-  ```bash
-  git clone http://github.com/auzigog/hyde-bootstrap.git mynewsite/code
+Run these commands on the terminal: 
+
+```bash
+  
+  #setup a new virtual environment
   virtualenv --no-site-packages --distribute mynewsite/env
+  
+  # clone the code into that new enviornment.
+  git clone http://github.com/auzigog/hyde-bootstrap.git mynewsite/env/code
+  
+  # change your directory into the virtual environment and run the activate command.
+  cd mynewsite/env && activate
+  
+  # install the requirements into the virtual environment.
   pip install -r requirements.txt
-  hyde gen   # To generate the Bootstrap-based site in it's default state
-  ```
-  3. Poke around on the site by opening mynewsite/deploy/index.html in your browser
+  
+  # change into the code directory and generate the Bootstrap-based site in it's default state
+  cd code && hyde gen
+  
+  # start the dev server and surf to http://localhost:8080
+  hyde serve
+```
+Poke around on the site by opening mynewsite/deploy/index.html in your browser
 
 
 ## Usage
