@@ -5,3 +5,12 @@
 {%- endfor %}
 </ul>
 {%- endmacro %}
+
+{% macro render_sidebar() -%}
+<ul class="nav nav-list">
+    <li class="nav-header">Sidebar</li>
+{% for sidebar_item in sidebar -%}
+  <li{% if sidebar_item.url == resource.url or sidebar_item.active %} class="active"{% endif %}><a href="{{ sidebar_item.url }}">{{ sidebar_item.title }}</a></li>
+{%- endfor %}
+</ul>
+{%- endmacro %}
