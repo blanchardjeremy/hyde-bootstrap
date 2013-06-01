@@ -19,3 +19,8 @@ context:
               url: index.html
             - title: Landing
               url: landing.html
+        sidebar:
+            - title: One
+              url: one.html
+            - title: Two
+              url: \#
