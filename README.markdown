@@ -1,18 +1,20 @@
 # hyde-bootstrap
 
-A layout for [Hyde][hyde] using the [Bootstrap][bootstrap] framework.
+**Updated for the newest bootstrap version**
 
-Current stable version: v0.2
+A layout for [Hyde][hyde] using the [Bootstrap][bootstrap] framework.
+Current stable version: v0.3
 
 ## Demo
-I'm working on getting a demo site up. For now, you can look at the [specific Bootstrap example layout][bootstrap_template] this was based on.
+This is based loosely on [this Bootstrap example layout][bootstrap_template]. The fluid columns are
+disabled though
 
 
 ## Setup
 The simplest way to use this layout is to:
 
 ### Using a Zip File
-  1. Download the [latest zip archive](https://github.com/auzigog/hyde-bootstrap/zipball/master)
+  1. Download the [latest zip archive](https://github.com/anandtrex/hyde-bootstrap/zipball/master)
   2. Unzip it
   3. Place the unzipped files wherever you want your new Hyde site to be
   4. From the terminal run `hyde gen` to generate the Bootstrap-based site in it's default state
@@ -28,7 +30,7 @@ Run these commands on the terminal:
   virtualenv --no-site-packages --distribute mynewsite/env
   
   # clone the code into that new enviornment.
-  git clone http://github.com/auzigog/hyde-bootstrap.git mynewsite/env/code
+  git clone http://github.com/anandtrex/hyde-bootstrap.git mynewsite/env/code
   
   # change your directory into the virtual environment and run the activate command.
   cd mynewsite/env && activate
@@ -52,7 +54,7 @@ There are a variety of templates that you can subclass using `{% extends "templa
 or post.
 
   * `base.j2` - Contains the bulk of the layout logic, but not the best for subclassing because it doesn't have any grid attached to it.
-  * `columns.j2` - Has a main content area and a sidebar. Based on Bootstrap's [container-app.html][bootstrap_template] example.
+  * `columns.j2` - Has a main content area and a sidebar. Based on Bootstrap's [fluid.html][bootstrap_template] example.
   * `topbar.j2` - Adds a top bar to the base layout
 
 ### Custom Templates
@@ -62,7 +64,7 @@ You can subclass `topbar.j2` or `base.j2` to cover most use cases. All of the te
 starting point and as an examlpe of possible approaches you can use.
 
 ### Adding Content
-Look at all of the `.html` files in the `content` directory for an examlpe of how to begin adding your own content.
+Look at all of the `.html` files in the `content` directory for an example of how to begin adding your own content.
 
 You can also go to a separate, fresh directory and run `hyde create mysamplehydesite` to check out their default layout
 and content.
@@ -85,24 +87,19 @@ elements of your site. In the default hyde-bootstrap setup, analytics is only re
 ## Versions
 Built using:
 
-  * Hyde [0.8.4](http://github.com/hyde/hyde/tree/42d30a6ff979c444fbec5bf04e56863d7d63fef9) -- [homepage][hyde], [repo](http://github.com/hyde/hyde)
-  * Bootstrap [1.4.0](http://github.com/twitter/bootstrap/tree/f92759b36db43e782e4235f1f214ac5851383f9b) -- [homepage][bootstrap], [repo](http://github.com/twitter/bootstrap/)
+  * Hyde [0.8.7](http://github.com/hyde/hyde/tree/696adac061ff040d5c5be1c629c94975c146f32a) -- [homepage][hyde], [repo](http://github.com/hyde/hyde)
+  * Bootstrap [2.3.2](http://github.com/twitter/bootstrap/tree/d9b502dfb876c40b0735008bac18049c7ee7b6d2) -- [homepage][bootstrap], [repo](http://github.com/twitter/bootstrap/)
 
 
 ## Notes
-There's a bit of code mixed in from the [HTML5 Boilerplate](http://html5boilerplate.com/) project for jQuery and and IE PNG fix.
-
-
-## TODO
-List of features I'd like to see added (by me or by you via a pull request!)
-
-  * Write an helper function to automatically calculate grid numbers
+* There's a bit of code mixed in from the [HTML5 Boilerplate](http://html5boilerplate.com/) project for jQuery and and IE PNG fix.
+* To update the js and css files of bootstrap to newer versions, run `./update-bootstrap-libs.sh`
 
 
 ## Credits
 Built by [Jeremy Blanchard](http://blanchardjeremy.com).
-
+Contributions by [Anand S](https://github.com/anandtrex).
 
 [hyde]: http://hyde.github.com/
 [bootstrap]: http://twitter.github.com/bootstrap/
-[bootstrap_template]: http://twitter.github.com/bootstrap/examples/container-app.html
+[bootstrap_template]: http://twitter.github.io/bootstrap/examples/fluid.html
