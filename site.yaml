@@ -8,10 +8,10 @@ plugins:
     - hyde.ext.plugins.textlinks.TextlinksPlugin
 context:
     data:
-        site_title: Site Name
+        site_title: Pupil Labs
         author:
-            name: Your Name Here
-            url: "http://example.com"
+            name: Pupil Labs - William Patera and Moritz Kassner
+            url: "http://pupil-labs.com"
         google_analytics_id: UA-XXXXX-YY
         home_url: index.html
         menu:
