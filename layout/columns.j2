@@ -5,13 +5,13 @@
 {% block container %}
 
 <div class="row">
-  <div class="span3">
+  <div class="col-lg-3">
     <div class="well sidebar-nav">
         {% from "macros.j2" import render_sidebar with context %}
         {{ render_sidebar() }}
     </div><!--well-->
   </div><!--span-->
-  <div class="span9">
+  <div class="col-lg-9">
       {% filter markdown -%}
       {% block main %}{% endblock %}
       {%- endfilter %}

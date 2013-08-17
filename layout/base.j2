@@ -39,7 +39,7 @@
             }
         }
     </style>
-    <link href="{{ media_url('css/bootstrap-responsive.css') }}" rel="stylesheet">
+
     {% endblock basecss %}
     {% block css %}{% endblock %}
 
@@ -52,7 +52,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{{ media_url('img/appleimgim-touch-icon-72x72.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ media_url('img/apple-touch-icon-114x114.png') }}">
     {% endblock favicons %}
-    
+
     {% block headjs %}
     {% endblock headjs %}
 
@@ -79,7 +79,7 @@
     </div> <!-- /container -->
 
     {% endblock body %}
-    
+
     {% block js %}
     {# Javascript at the bottom for fast page loading #}
     {% block jquery %}
@@ -91,14 +91,18 @@
     {% block bootstrap_scripts %}
     <script src="{{ media_url('js/libs/bootstrap.min.js') }}"></script>
     {# Uncomment any of these lines to enable that plugin on your site #}
-{#    <script src="{{ media_url('js/libs/bootstrap-alerts.js') }}"></script>#}
-{#    <script src="{{ media_url('js/libs/bootstrap-buttons.js') }}"></script>#}
-{#    <script src="{{ media_url('js/libs/bootstrap-dropdown.js') }}"></script>#}
-{#    <script src="{{ media_url('js/libs/bootstrap-modal.js') }}"></script>#}
-{#    <script src="{{ media_url('js/libs/bootstrap-popover.js') }}"></script>#}
-{#    <script src="{{ media_url('js/libs/bootstrap-scrollspy.js') }}"></script>#}
-{#    <script src="{{ media_url('js/libs/bootstrap-tabs.js') }}"></script>#}
-{#    <script src="{{ media_url('js/libs/bootstrap-twipsy.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/affix.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/alert.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/button.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/carousel.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/collapse.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/dropdown.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/modal.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/popover.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/scrollspy.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/tab.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/tooltip.js') }}"></script>#}
+{#    <script src="{{ media_url('js/libs/transition.js') }}"></script>#}
     {% endblock bootstrap_scripts %}
 
     {% block scripts %}
