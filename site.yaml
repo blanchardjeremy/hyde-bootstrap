@@ -15,10 +15,13 @@ context:
         google_analytics_id: UA-XXXXX-YY
         home_url: index.html
         menu:
-            - title: Home
+            - title: Starter Template
               url: index.html
-            - title: Landing
-              url: landing.html
+            - title: Grids
+              url: grids.html
+            - title: Jumbotron
+              url: jumbo.html
+
         sidebar:
             - title: One
               url: one.html
