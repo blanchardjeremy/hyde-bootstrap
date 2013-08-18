@@ -1,0 +1,18 @@
+{# Fullwidth template #}
+
+{% extends "topbar.j2" %}
+
+{% block container %}
+
+<div class="starter-template" style="padding: 40px 15px; text-align:center;">
+  {% filter markdown -%}
+    {% block headline %}{% endblock headline %}
+  {%- endfilter %}
+  <div class="lead">
+    {% filter markdown -%}
+      {% block leadtext %}{% endblock leadtext %}
+    {%- endfilter %}
+  </div>
+</div><!-- /.starter-template -->
+
+{% endblock container %}
