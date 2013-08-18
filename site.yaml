@@ -17,8 +17,8 @@ context:
         menu:
             - title: Starter Template
               url: index.html
-            - title: Grids
-              url: grids.html
+            - title: Off Canvas
+              url: offcanvas.html
             - title: Jumbotron
               url: jumbo.html
 
