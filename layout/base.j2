@@ -65,7 +65,7 @@
   <body class="{{ resource.meta.id if resource.meta.id else resource.slug }}">
 
     {% block body %}
-
+    {% block jumbotron %}{% endblock jumbotron %}
     <div class="container" id="top">
       {% block container %}
 
@@ -103,6 +103,7 @@
 {#    <script src="{{ media_url('js/libs/tab.js') }}"></script>#}
 {#    <script src="{{ media_url('js/libs/tooltip.js') }}"></script>#}
 {#    <script src="{{ media_url('js/libs/transition.js') }}"></script>#}
+    <script src="{{ media_url('js/libs/offcanvas.js') }}"></script>
     {% endblock bootstrap_scripts %}
 
     {% block scripts %}

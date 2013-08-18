@@ -1,0 +1,49 @@
+{# Jumbotron template #}
+
+{% extends "topbar.j2" %}
+
+
+{% block jumbotron %}
+<div class="jumbotron" style="margin-top: -50px;">
+    <div class="container">
+        {% filter markdown -%}
+            {% block headline %}{% endblock %}
+        {%- endfilter %}
+        <p><a href="#" class="btn btn-primary btn-lg">
+        {% block button %}{% endblock %} &raquo;
+        </a></p>
+    </div><!-- /container -->
+</div><!-- /jumbotron -->
+{% endblock jumbotron %}
+{% block container %}
+
+<div class="row">
+    <div class="col-lg-4">
+        {% filter markdown -%}
+            {% block column1 %}{% endblock %}
+        {%- endfilter %}
+        <p><a href="#" class="btn btn-default">
+        {% block button1 %}{% endblock %} &raquo;
+        </a></p>
+    </div>
+
+    <div class="col-lg-4">
+        {% filter markdown -%}
+            {% block column2 %}{% endblock %}
+        {%- endfilter %}
+        <p><a href="#" class="btn btn-default">
+        {% block button2 %}{% endblock %} &raquo;
+        </a></p>
+    </div>
+
+    <div class="col-lg-4">
+        {% filter markdown -%}
+            {% block column3 %}{% endblock %}
+        {%- endfilter %}
+        <p><a href="#" class="btn btn-default">
+        {% block button3 %}{% endblock %} &raquo;
+        </a></p>
+    </div>
+</div><!-- /.row -->
+
+{% endblock container %}
