@@ -65,7 +65,7 @@
   <body class="{{ resource.meta.id if resource.meta.id else resource.slug }}">
 
     {% block body %}
-
+    {% block jumbotron %}{% endblock jumbotron %}
     <div class="container" id="top">
       {% block container %}
 
