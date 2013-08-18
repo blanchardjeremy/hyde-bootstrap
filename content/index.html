@@ -4,12 +4,16 @@ subtitle: Columns template
 description: Test description
 ---
 
-{% extends "columns.j2" %}
+{% extends "fullwidth.j2" %}
 
-{% block main %}
-## Main content
+{% block headline %}
+# Hyde-Bootstrap v3.0.0.rc.2 starter template
+{% endblock %}
 
+{% block leadtext %}
 [hyde-bootstrap](http://github.com/auzigog/hyde-bootstrap/) is a layout for Hyde based on the Bootstrap framework.
 
-This particular page is based on Bootstrap's [fluid.html](http://twitter.github.io/bootstrap/examples/fluid.html) example.
-{% endblock main %}
+This particular page is based on Bootstrap v3.0.0.rc.2 [starter template - demo](http://getbootstrap.com/examples/starter-template/)/[starter-template.html - repo](https://github.com/twbs/bootstrap/blob/3.0.0-wip/examples/starter-template/index.html) example.
+{% endblock %}
+
+
