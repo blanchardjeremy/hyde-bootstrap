@@ -1,0 +1,15 @@
+.badge a {
+  font-weight: normal;
+  color: #999999;
+}
+
+.badge a:hover,
+.badge a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+article img {
+    display: block;
+    margin-bottom: 24px;
+}

@@ -40,17 +40,13 @@
         }
     </style>
     <link href="{{ media_url('css/bootstrap-responsive.css') }}" rel="stylesheet">
+    <link href="{{ media_url('css/application.css') }}" rel="stylesheet">
     {% endblock basecss %}
     {% block css %}{% endblock %}
 
 
 
     {% block favicons %}
-    {# Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references #}
-    <link rel="shortcut icon" href="{{ media_url('img/favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ media_url('img/apple-touch-icon.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ media_url('img/appleimgim-touch-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ media_url('img/apple-touch-icon-114x114.png') }}">
     {% endblock favicons %}
     
     {% block headjs %}

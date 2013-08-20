@@ -9,7 +9,7 @@
   {% block topbar %}
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="{{ home_url }}">{{ site_title }}</a>
+      <a class="brand" href="{{ content_url(home_url) }}">{{ site_title }}</a>
       <div class="nav-collapse collapse">
         {% from "macros.j2" import render_main_menu with context %}
         {{ render_main_menu() }}
