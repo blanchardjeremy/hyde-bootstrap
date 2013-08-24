@@ -1,0 +1,15 @@
+{% extends "topbar.j2" %}
+{% from "macros.j2" import render_excerpt with context  %}
+{% block container %}
+{% block page_title %}<h1>{{ resource.meta.title }}</h1>{% endblock %}
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{% if loop.index0 % 3 == 0 %}<div class="row">{% endif %}
+<div class="col-md-4 well">
+    {{ render_excerpt(res) }}
+</div>
+
+{% if loop.index0 % 3 == 2 or loop.last %}</div>{% endif %}
+{% endfor %}
+
+{% endblock %}
