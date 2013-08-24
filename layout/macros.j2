@@ -1,7 +1,17 @@
 {% macro render_main_menu() -%}
 
-{% for menu_item in menu -%}
-  <li{% if menu_item.url == resource.url or menu_item.active %} class="active"{% endif %}><a href="{{ menu_item.url }}">{{ menu_item.title }}</a></li>
+{% for item in menu -%}
+    {% set active = False -%}
+    {% if item.type == 'page' -%}
+        {% set active = (resource.url ==
+            site.content.resource_from_relative_path(item.url).url) -%}
+    {% else -%}
+        {% set active = (node ==
+            site.content.node_from_relative_path(item.url)) -%}
+    {%- endif %}
+    <li {% if active %}class="active"{% endif %}>
+        <a href="{{ content_url(item.url) }}">{{ item.title }}</a>
+    </li>
 {%- endfor %}
 
 {%- endmacro %}
@@ -14,3 +24,19 @@
 {%- endfor %}
 </ul>
 {%- endmacro %}
+
+{% macro render_excerpt(res, class=None) %}
+{% refer to res.relative_path as post %}
+<div class="container">
+<h3><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h3>
+<p><small>
+  <time datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">
+    Posted: {{ res.meta.created.strftime('%a, %d %b %Y') }}
+  </time>
+</small></p>
+{{ post.excerpt|markdown|typogrify }}<a href="{{ content_url(res.url) }}">Read more&hellip;</a>
+</div>
+{% endmacro %}
+
+
+
