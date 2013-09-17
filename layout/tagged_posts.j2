@@ -1,0 +1,26 @@
+{% extends "topbar.j2" %}
+
+{% block container %}
+<section class="archives">
+<h1>{{ tag.name }}</h1>
+{% for resource in walker() -%}
+<div class="row-fluid">
+    <div class="span2">
+    <small><time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">
+        {{ resource.meta.created.strftime('%a, %d %b %Y') }}
+    </time></small>
+    </div>
+    <div class="span7">
+    <strong><a href="{{ content_url(resource.url) }}">{{ resource.meta.title }}</a></strong>
+    </div>
+    <div class="span3"><div class="pull-right">
+    {% if resource.meta.tags %}
+    {% for tag in resource.meta.tags %}
+        <span class="badge badge-inverse"><a href="{{ content_url('blog/tags/'~tag~'.html') }}">{{ tag }}</a></span>
+    {% endfor %}
+    {% endif %}
+    </div></div>
+</div>
+{%- endfor %}
+</section>
+{% endblock %}

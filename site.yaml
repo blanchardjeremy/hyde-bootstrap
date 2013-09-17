@@ -6,6 +6,8 @@ plugins:
     - hyde.ext.plugins.auto_extend.AutoExtendPlugin
     - hyde.ext.plugins.syntext.SyntextPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
+    - hyde.ext.plugins.meta.SorterPlugin
+    - hyde.ext.plugins.meta.TaggerPlugin
 context:
     data:
         site_title: Site Name
@@ -16,14 +18,37 @@ context:
         home_url: index.html
         menu:
             - title: Starter Template
+              type: page
               url: index.html
             - title: Off Canvas
+              type: page
               url: offcanvas.html
             - title: Jumbotron
+              type: page
               url: jumbo.html
-
+            - title: Blog
+              type: node
+              url: blog
         sidebar:
             - title: One
               url: one.html
             - title: Two
               url: \#
+sorter:
+    time:
+        attr:
+            - meta.created
+        reverse: true
+        filters:
+            source.kind: html
+            meta.listable: true
+tagger:
+    sorter: time
+    archives:
+        blog:
+            source: blog
+            target: blog/tags
+            template: tagged_posts.j2
+            archive_extension: html
+            meta:
+                listable: false
