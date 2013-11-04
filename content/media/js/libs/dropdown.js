@@ -1,8 +1,8 @@
 /* ========================================================================
  * Bootstrap: dropdown.js v3.0.0
- * http://twbs.github.com/bootstrap/javascript.html#dropdowns
+ * http://getbootstrap.com/javascript/#dropdowns
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@
     clearMenus()
 
     if (!isActive) {
-      if ('ontouchstart' in document.documentElement) {
+      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
         // if mobile we we use a backdrop because click events don't delegate
         $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
       }
@@ -52,9 +52,9 @@
       $parent
         .toggleClass('open')
         .trigger('shown.bs.dropdown')
-    }
 
-    $this.focus()
+      $this.focus()
+    }
 
     return false
   }
