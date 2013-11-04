@@ -88,7 +88,7 @@ elements of your site. In the default hyde-bootstrap setup, analytics is only re
 Built using:
 
   * Hyde [0.8.7](http://github.com/hyde/hyde/tree/696adac061ff040d5c5be1c629c94975c146f32a) -- [homepage][hyde], [repo](http://github.com/hyde/hyde)
-  * Bootstrap [v3.0.0.rc.2](https://github.com/twbs/bootstrap) -- [homepage][bootstrap], [repo](http://github.com/twitter/bootstrap/)
+  * Bootstrap [v3.0.1](https://github.com/twbs/bootstrap) -- [homepage][bootstrap], [repo](http://github.com/twitter/bootstrap/)
 
 
 ## Notes
