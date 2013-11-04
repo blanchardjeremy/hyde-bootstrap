@@ -14,7 +14,7 @@ disabled though
 The simplest way to use this layout is to:
 
 ### Using a Zip File
-  1. Download the [latest zip archive](https://github.com/anandtrex/hyde-bootstrap/zipball/master)
+  1. Download the [latest zip archive](https://github.com/auzigog/hyde-bootstrap/zipball/master)
   2. Unzip it
   3. Place the unzipped files wherever you want your new Hyde site to be
   4. From the terminal run `hyde gen` to generate the Bootstrap-based site in it's default state
@@ -30,7 +30,7 @@ Run these commands on the terminal:
   virtualenv --no-site-packages --distribute mynewsite/env
 
   # clone the code into that new enviornment.
-  git clone http://github.com/anandtrex/hyde-bootstrap.git mynewsite/env/code
+  git clone http://github.com/auzigog/hyde-bootstrap.git mynewsite/env/code
 
   # change your directory into the virtual environment and run the activate command.
   cd mynewsite/env && activate
